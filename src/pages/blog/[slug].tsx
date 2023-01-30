@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-
 import { IParams, IBlog, RootStore } from "../../utils/TypeScript";
 import { getAPI } from "../../utils/FetchData";
-
 import Loading from "../../components/global/Loading";
 import { showErrMsg } from "../../components/alert/Alert";
 import DisplayBlog from "../../components/blog/DisplayBlog";
