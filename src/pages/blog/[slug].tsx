@@ -80,7 +80,7 @@ const DetailBlog = () => {
 
         {blog && (
           <div className="home_page my-2 row justify-content-evenly position-relative">
-            <div style={{ maxWidth: "622px" }} className="col-12 col-lg-7 px-0">
+            <div style={{ maxWidth: "622px" }} className="col-12 col-lg-8 px-0">
               <DisplayBlog blog={blog} />
             </div>
             <div

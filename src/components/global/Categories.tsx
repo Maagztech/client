@@ -16,12 +16,11 @@ const Category = () => {
       style={{ overflow: "hidden", position: "sticky", top: 0, zIndex: 5 }}
     >
       <div
-        className={`example pt-2 pb-1 px-2`}
+        className={`example pt-2 pb-1 px-2 bg-${isdarkMode ? "dark" : "light"}`}
         style={{
           display: "block",
           overflow: "scroll",
           whiteSpace: "nowrap",
-          backgroundColor: isdarkMode ? "#202020" : "white",
         }}
       >
         <Link
