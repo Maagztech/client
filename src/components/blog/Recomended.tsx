@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { IBlog, Recomended, RootStore } from "../../utils/TypeScript";
 import CardVert from "../cards/CardVert";
@@ -10,7 +10,7 @@ export interface IProps {
   blog: IBlog;
 }
 const Sidebar: React.FC<IProps> = ({ blog }) => {
-  const { homeBlogs, categories, darkMode, auth } = useSelector(
+  const { darkMode } = useSelector(
     (state: RootStore) => state
   );
   const { isdarkMode } = darkMode;
@@ -49,8 +49,7 @@ const Sidebar: React.FC<IProps> = ({ blog }) => {
         } mt-2 mb-1`}
       >
         <h5 className="fw-bold">
-          Recomending more based on your recent Activity...
-        </h5>
+          Simmilar Articles        </h5>
       </div>
       <InfiniteScroll
         dataLength={page * 8} //This is important field to render the next data
