@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const Abovepost = () => {
   const { darkMode } = useSelector((state) => state);
-  const { isdarkMode } = darkMode;
   useEffect(() => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }, []);
