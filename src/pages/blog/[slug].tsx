@@ -68,7 +68,7 @@ const DetailBlog = () => {
             twitterimage={blog.thumbnail}
             ogimage={blog.thumbnail}
             ogdescription={blog.description}
-            ogurl={`https://www.pediageek.com/blog/${blog._id}`}
+            ogurl={`https://www.CrunchCave.com/blog/${blog._id}`}
             twitterdescription={blog.description}
             ogtitle={blog.title}
             twittertitle={blog.title}
@@ -85,7 +85,7 @@ const DetailBlog = () => {
             </div>
             <div
               className="col-12 col-lg-4 position-sticky px-0"
-              style={{ maxHeight: "100vh", top: 60 }}
+              style={{ maxHeight: "100vh", top: 60, maxWidth: "622px" }}
             >
               <Sidebar blog={blog} setBlog={setBlog} />
             </div>

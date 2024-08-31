@@ -564,7 +564,7 @@ const EditInfo = () => {
                         name="organization"
                         type="text"
                         className="form-control me-2 w-100"
-                        placeholder="Pediageek, Microsoft, Apple"
+                        placeholder="CrunchCave, Microsoft, Apple"
                         onFocus={(e) => {
                           showhide("organization-auto");
                           setSearchname({

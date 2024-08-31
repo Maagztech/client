@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     if (
-      (localStorage.getItem("logged") !== "pediageek" || auth.user) &&
+      (localStorage.getItem("logged") !== "CrunchCave" || auth.user) &&
       homeBlogs.blogs.length === 0
     )
       dispatch(getHomeBlogs(`?page=${1}`, auth));

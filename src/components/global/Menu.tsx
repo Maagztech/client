@@ -205,9 +205,9 @@ const Menu = () => {
                       <b>
                         <span style={{ color: isdarkMode ? "white" : "black" }}>
                           {" "}
-                          Pedia
+                          Crunch
                         </span>
-                        <span style={{ color: "#00e600" }}>Geek</span>
+                        <span style={{ color: "#00e600" }}>Cave</span>
                       </b>
                     </Link>
                   </h5>
@@ -229,7 +229,7 @@ const Menu = () => {
                         to="/about_us"
                       >
                         <i className="fas fa-users "></i>
-                        <span className="mx-2"> About PediaGeek</span>
+                        <span className="mx-2"> About CrunchCave</span>
                       </Link>
                     </li>
                     <li className="my-5">

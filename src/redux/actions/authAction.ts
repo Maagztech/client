@@ -31,7 +31,7 @@ export const login =
         },
       });
       dispatch({ type: ALERT, payload: { loading: false } });
-      localStorage.setItem("logged", "pediageek");
+      localStorage.setItem("logged", "CrunchCave");
     } catch (err: any) {
       dispatch({ type: ALERT, payload: { errors: err.response.data.msg } });
     }
@@ -59,7 +59,7 @@ export const register =
 export const refreshToken =
   () => async (dispatch: Dispatch<IAuthType | IAlertType>) => {
     const logged = localStorage.getItem("logged");
-    if (logged !== "pediageek") return;
+    if (logged !== "CrunchCave") return;
 
     try {
       dispatch({ type: ALERT, payload: { loading: true } });
@@ -104,7 +104,7 @@ export const googleLogin =
         },
       });
       dispatch({ type: ALERT, payload: { loading: false } });
-      localStorage.setItem("logged", "pediageek");
+      localStorage.setItem("logged", "CrunchCave");
     } catch (err: any) {
       dispatch({ type: ALERT, payload: { errors: err.response.data.msg } });
     }

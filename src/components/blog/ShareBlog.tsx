@@ -23,12 +23,12 @@ export interface IProps {
 const ReactShare: React.FC<IProps> = ({ blog }) => {
   const dispatch = useDispatch();
   const { auth } = useSelector((state: RootStore) => state);
-  let arr = ["pediageek", blog.category];
+  let arr = ["CrunchCave", blog.category];
   const copy1 = () => {
     navigator.clipboard.writeText(`${blog.title}
             ${blog.like}Likes, ${blog.comment}Comments
             ${blog.description}
-            https://www.pediageek.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}?ref=${auth.user?._id}`);
+            https://www.CrunchCave.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}?ref=${auth.user?._id}`);
 
     dispatch({ type: ALERT, payload: { success: "Copied." } });
   };
@@ -45,9 +45,9 @@ const ReactShare: React.FC<IProps> = ({ blog }) => {
         <div>
           <TwitterShareButton
             className="mx-1"
-            url={`https://www.pediageek.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
+            url={`https://www.CrunchCave.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
             title={blog.title}
-            hashtags={["pediageek"]}
+            hashtags={["CrunchCave"]}
           >
             <TwitterIcon size={35} round={true} />{" "}
           </TwitterShareButton>
@@ -55,7 +55,7 @@ const ReactShare: React.FC<IProps> = ({ blog }) => {
         <div>
           <FacebookShareButton
             className="mx-1"
-            url={`https://www.pediageek.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
+            url={`https://www.CrunchCave.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
             quote={blog.title}
           >
             <FacebookIcon size={35} round={true} />{" "}
@@ -64,10 +64,10 @@ const ReactShare: React.FC<IProps> = ({ blog }) => {
         <div>
           <LinkedinShareButton
             className="mx-1"
-            url={`https://www.pediageek.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
+            url={`https://www.CrunchCave.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
             title={blog.title}
             summary={blog.description}
-            source={"pediageek.com"}
+            source={"CrunchCave.com"}
           >
             <LinkedinIcon size={35} round={true} />{" "}
           </LinkedinShareButton>
@@ -75,7 +75,7 @@ const ReactShare: React.FC<IProps> = ({ blog }) => {
         <div>
           <TelegramShareButton
             className="mx-1"
-            url={`https://www.pediageek.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
+            url={`https://www.CrunchCave.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
             title={blog.title}
           >
             <TelegramIcon size={35} round={true} />{" "}
@@ -84,7 +84,7 @@ const ReactShare: React.FC<IProps> = ({ blog }) => {
         <div>
           <WhatsappShareButton
             className="mx-1"
-            url={`https://www.pediageek.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
+            url={`https://www.CrunchCave.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
             title={blog.title}
           >
             <WhatsappIcon size={35} round={true} />{" "}
@@ -94,7 +94,7 @@ const ReactShare: React.FC<IProps> = ({ blog }) => {
           {typeof blog.thumbnail === "string" && (
             <PinterestShareButton
               className="mx-1"
-              url={`https://www.pediageek.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
+              url={`https://www.CrunchCave.com/blog/${blog._id}/${blog.title.replaceAll(" ", "_").replaceAll("/", ".")}`}
               media={blog.thumbnail}
               description={blog.description}
             >

@@ -54,7 +54,7 @@ const Helmetglobal: React.FC<IProps> = ({
             {/* optional */}
             {twittersite && <meta name="twitter:site" content={`${twittersite}`} />}
             {twittercreator && <meta name="twitter:creator" content={`${twittercreator}`} />}
-            <meta property="og:site_name" content="PediaGeek" />
+            <meta property="og:site_name" content="CrunchCave" />
             <meta property="og:locale" content="en_US" />
 
 

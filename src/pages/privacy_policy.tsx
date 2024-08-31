@@ -7,16 +7,16 @@ const Privacy_policy = () => {
   const {isdarkMode}=darkMode;
   return (
     <div className={`d-flex justify-content-center my-3 text-${isdarkMode?'white':'black'}`} style={{ width: '100%' }}>
-       <Helmetglobal title="Privacy Policy" description="This page explains all the legal rights of a person to use our website and his roles.." keyword="privacy,policy ,pediageek" />
+       <Helmetglobal title="Privacy Policy" description="This page explains all the legal rights of a person to use our website and his roles.." keyword="privacy,policy ,CrunchCave" />
      
       <div style={{ maxWidth: '800px' }}>
 
-        <h1 style={{ textAlign: "center" }}>Welcome to PediaGeek&nbsp;</h1>
+        <h1 style={{ textAlign: "center" }}>Welcome to CrunchCave&nbsp;</h1>
         <p style={{ textAlign: "center" }}>
-          <b>PediaGeek is the best way to express your ideas to the World.</b>
+          <b>CrunchCave is the best way to express your ideas to the World.</b>
         </p>
         <p>
-          When you use Our services managed in the URL pediageek.com means you are
+          When you use Our services managed in the URL CrunchCave.com means you are
           trusting us with your information and We understand it is Our great
           responsibility to make your data and information safe with us. This page
           explains how, when, and why a particular data is collected from your side
@@ -112,11 +112,11 @@ const Privacy_policy = () => {
         <p>
           Third-party ad servers or ad networks uses technologies like cookies,
           JavaScript, or Web Beacons that are used in their respective advertisements
-          and links that appear on PediaGeek, which are sent directly to users'
+          and links that appear on CrunchCave, which are sent directly to users'
           browser. They automatically receive your IP address when this occurs. These
           technologies are used to measure the effectiveness of their advertising
           campaigns and/or to personalize the advertising content that you see on
-          websites that you visit. Note that PediaGeek has no access to or control
+          websites that you visit. Note that CrunchCave has no access to or control
           over these cookies that are used by third-party advertisers.
         </p>
         <h2 style={{ textAlign: "left" }}>
@@ -176,7 +176,7 @@ const Privacy_policy = () => {
         <p>
           Another part of Our priority is adding protection for children while using
           the internet. We encourage parents and guardians to observe, participate in,
-          and/or monitor and guide their online activity. PediaGeek does not knowingly
+          and/or monitor and guide their online activity. CrunchCave does not knowingly
           collect any Personal Identifiable Information from children under the age of
           13. If you think that your child provided this kind of information on Our
           website, We strongly encourage you to contact us immediately and We will put
@@ -185,8 +185,8 @@ const Privacy_policy = () => {
         <h2 style={{ textAlign: "left" }}>Contact us&nbsp;</h2>
         <p>Address:India .&nbsp;</p>
         <p>Mobile no. :8114694441 .&nbsp;</p>
-        <p>Email id:contact@pediageek.com&nbsp;</p>
-        <p>Linkedin : https://www.linkedin.com/company/pediageek</p>
+        <p>Email id:contact@CrunchCave.com&nbsp;</p>
+        <p>Linkedin : https://www.linkedin.com/company/CrunchCave</p>
       </div>
     </div>
 

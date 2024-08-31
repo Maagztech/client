@@ -15,7 +15,7 @@ const GooglePrompt = () => {
   useEffect(() => {
     window.google?.accounts?.id.initialize({
       client_id:
-        "470831587453-n1i1ee8jvgdoh3c0q7rv50h1ttfrusk3.apps.googleusercontent.com",
+        "1041745825482-u922584jq0c9tet934q43m003fl4s499.apps.googleusercontent.com",
       callback: onSuccess,
     });
     if (auth.access_token === undefined) {

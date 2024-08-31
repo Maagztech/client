@@ -40,7 +40,7 @@ const Footer = () => {
               <i className="fab fa-instagram"></i>
             </a> */}
               <a
-                href="https://www.linkedin.com/company/pediageek.com/"
+                href="https://www.linkedin.com/company/CrunchCave.com/"
                 className="me-4 text-reset"
                 target="_blank"
               >
@@ -65,10 +65,10 @@ const Footer = () => {
                       isdarkMode ? "white" : "black"
                     }`}
                   >
-                    Pedia<span style={{ color: "#00e600" }}>Geek</span>
+                    Crunch<span style={{ color: "#00e600" }}>Cave</span>
                   </h6>
                   <p className={`text-${isdarkMode ? "white" : "black"}`}>
-                    PediaGeek is the best way to express your idea to the World.
+                    CrunchCave is the best way to express your idea to the World.
                   </p>
                 </div>
 
@@ -157,7 +157,7 @@ const Footer = () => {
                   </p>
                   <p>
                     <i className="fas fa-envelope me-3"></i>
-                    contact@pediageek.com{" "}
+                    contact@CrunchCave.com{" "}
                   </p>
                   <p>
                     <i className="fas fa-phone-volume me-3"></i>+91 8114694441
@@ -174,9 +174,9 @@ const Footer = () => {
             © 2022 Copyright:
             <a
               className="text-reset fw-bold text-capitalize text-decoration-none"
-              href="http://pediageek.com/"
+              href="http://CrunchCave.com/"
             >
-              PediaGeek
+              CrunchCave
             </a>
           </div>
           <br />

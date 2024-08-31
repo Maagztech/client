@@ -50,8 +50,8 @@ const Todays = () => {
                   style={{ color: isdarkMode ? "white" : "#003300" }}
                 >
                   It is a time to celebrate the eternal bond of Love, Care,
-                  Trust, and Togetherness... PediaGeek On the occasion of Raksha
-                  Bandhan, PediaGeek wishes you and your loving sibling a very
+                  Trust, and Togetherness... CrunchCave On the occasion of Raksha
+                  Bandhan, CrunchCave wishes you and your loving sibling a very
                   happy and prosperous festival time.
                 </h6>
               </div>

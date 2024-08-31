@@ -6,19 +6,19 @@ const About = () => {
   const {isdarkMode}=darkMode;
   return (
     <div className={`d-flex justify-content-center my-3 text-${isdarkMode?'white':'black'}`} style={{ width: '100%' }}>
-      <Helmetglobal title="About us" description="Pediageeek is the place to express your ideas and views." keyword="aboutus,pediageek" />
+      <Helmetglobal title="About us" description="Crunchgeeek is the place to express your ideas and views." keyword="aboutus,CrunchCave" />
       <div style={{ maxWidth: '800px' }}>
 
-        <h1 style={{ textAlign: "center" }}>Welcome to PediaGeek&nbsp;</h1>
+        <h1 style={{ textAlign: "center" }}>Welcome to CrunchCave&nbsp;</h1>
         <p style={{ textAlign: "center" }}>
-          <b>PediaGeek is the best way to express your ideas to the World.</b>
+          <b>CrunchCave is the best way to express your ideas to the World.</b>
         </p>
         <p style={{ textAlign: "left" }}>
-          We are happy that you want to know something more about PediaGeek.&nbsp;
+          We are happy that you want to know something more about CrunchCave.&nbsp;
         </p>
         <p style={{ textAlign: "left" }}>1. Introduction&nbsp;</p>
         <p style={{ textAlign: "left" }}>2. Mission&nbsp;</p>
-        <p style={{ textAlign: "left" }}>3. About PediaGeek&nbsp;</p>
+        <p style={{ textAlign: "left" }}>3. About CrunchCave&nbsp;</p>
         <p style={{ textAlign: "left" }}>4. Services&nbsp;</p>
         <p style={{ textAlign: "left" }}>5. Founder Words&nbsp;</p>
         <p style={{ textAlign: "left" }}>
@@ -50,32 +50,32 @@ const About = () => {
           you can join by email and other Social Media Platforms. You can get all the
           links on the contact page of our website if you visit now.
         </p>
-        <h2 style={{ textAlign: "left" }}>About PediaGeek</h2>
+        <h2 style={{ textAlign: "left" }}>About CrunchCave</h2>
         <p style={{ textAlign: "left" }}>
           As you can see We have already mentioned what our goal and service are.
           Again, We repeat that We mainly focus on the Variety of Blog Categories to
-          help people.PediaGeek is dedicated to providing you the best, with a focus
+          help people.CrunchCave is dedicated to providing you the best, with a focus
           on dependability and Creating your space on the internet without much
           hesitation. This Website is created only to help people because many people
           are still spending hours to get exact information. So, this is the only
-          motive to create PediaGeek. To help people and provide them a better web
-          experience. Now, it is time for some words from the PediaGeek founder-
+          motive to create CrunchCave. To help people and provide them a better web
+          experience. Now, it is time for some words from the CrunchCave founder-
         </p>
         <p style={{ textAlign: "left" }}>
           From my point of view, many people visit the internet to get some
           information but 90% of the time they get the wrong information, so, the
-          priority of our website PediaGeek is to provide 100% legit and accurate
+          priority of our website CrunchCave is to provide 100% legit and accurate
           information to our users. Also, We hope our dream comes true one day, and
           our website will provide Original Content to provide a better user
           experience. So, from my side, thanks for visiting our website.
         </p>
-        <p style={{ textAlign: "left" }}>&nbsp;(Founder PediaGeek)</p>
+        <p style={{ textAlign: "left" }}>&nbsp;(Founder CrunchCave)</p>
         <h2 style={{ textAlign: "left" }}>Contact&nbsp;</h2>
         <p style={{ textAlign: "left" }}>
           This website is only for you, so, anything you don't like please mention to
           us through the comment section. Contact us through the mentioned link. If
-          you require any more information or have any questions about PediaGeek,
-          please feel free to contact us. Team PediaGeek is working to turn its
+          you require any more information or have any questions about CrunchCave,
+          please feel free to contact us. Team CrunchCave is working to turn its
           passion into a booming online website. We hope you enjoy our services as
           much as We enjoy offering them to you. We will keep posting more important
           posts on our Website for all of you. Please give your support and love.

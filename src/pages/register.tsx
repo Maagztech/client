@@ -19,7 +19,7 @@ const Register = () => {
 
   return (
     <div className={`auth_page bg-${isdarkMode?'dark':'light'} text-${isdarkMode?'white':'black'}`}>
-      <Helmetglobal title="Register" description="Register at Pediageek to start your blogging and earning journey." keyword="Register" />
+      <Helmetglobal title="Register" description="Register at CrunchCave to start your blogging and earning journey." keyword="Register" />
 
       <div className={`auth_box  bg-${isdarkMode?'dark':'light'} text-${isdarkMode?'white':'black'}`}>
         <h3 className="text-uppercase text-center mb-4">Register</h3>

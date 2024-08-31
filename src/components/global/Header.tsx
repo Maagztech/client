@@ -130,9 +130,9 @@ const Header = () => {
           >
             <span style={{ color: isdarkMode ? "white" : "black" }}>
               {" "}
-              Pedia
+              Crunch
             </span>
-            <span style={{ color: "#00e600" }}>Geek</span>
+            <span style={{ color: "#00e600" }}>Cave</span>
           </Link>
           <hr />
           <ul className="nav flex-column mb-auto">
@@ -355,10 +355,10 @@ const Header = () => {
                 © 2022 Copyright:
                 <a
                   className="text-reset text-capitalize text-decoration-none"
-                  href="http://pediageek.com/"
+                  href="http://CrunchCave.com/"
                 >
                   {" "}
-                  PediaGeek
+                  CrunchCave
                 </a>
               </span>
             </small>

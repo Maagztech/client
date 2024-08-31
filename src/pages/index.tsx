@@ -37,8 +37,8 @@ const Home = () => {
       <Aibox />
       <Referal />
       <Helmetglobal
-        title="PediaGeek"
-        description="PediaGeek is the best way to express your idea to the World."
+        title="CrunchCave"
+        description="CrunchCave is the best way to express your idea to the World."
         keyword="Home,explore,blogs,social_media"
       />
       <div className="home_page my-2 row justify-content-evenly position-relative">

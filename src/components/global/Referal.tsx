@@ -8,7 +8,7 @@ const Referal = () => {
   const copy1 = () => {
     if (auth.access_token) {
       navigator.clipboard
-        .writeText(`Hi, I just invited you to use the Pediageek ! 
+        .writeText(`Hi, I just invited you to use the CrunchCave ! 
     
             Step1: Click on the link below register using your email id.
             Step2: Write your first blog and post it.
@@ -24,9 +24,9 @@ const Referal = () => {
   const copy2 = () => {
     if (auth.access_token && auth.user) {
       navigator.clipboard
-        .writeText(`Hi, I just invited you to use the Pediageek ! 
+        .writeText(`Hi, I just invited you to use the CrunchCave ! 
 
-            Step1: Use my code during registration on the website. link: https://pediageek.com/register
+            Step1: Use my code during registration on the website. link: https://CrunchCave.com/register
             Step2: Write your first blog and post it.
             Step3: Get Rs.10-100 on your account instatntly and earn 21-25 per 100 viewson your blog.
             

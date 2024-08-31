@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "description": "PediaGeek is the best way to express your idea to the World. Our technology allows content writers to get online with a professional account on the internet.",
+  "description": "CrunchCave is the best way to express your idea to the World. Our technology allows content writers to get online with a professional account on the internet.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
