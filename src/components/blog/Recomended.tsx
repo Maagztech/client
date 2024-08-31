@@ -10,9 +10,7 @@ export interface IProps {
   blog: IBlog;
 }
 const Sidebar: React.FC<IProps> = ({ blog }) => {
-  const { darkMode } = useSelector(
-    (state: RootStore) => state
-  );
+  const { darkMode } = useSelector((state: RootStore) => state);
   const { isdarkMode } = darkMode;
   const [page, setPage] = useState(0);
   const [blogs, setBlogs] = useState<Recomended[]>();
@@ -22,7 +20,7 @@ const Sidebar: React.FC<IProps> = ({ blog }) => {
         getAPI(`simmilarblogs?blog=${blog._id}&page=${page}`)
           .then((res) => {
             setBlogs(res.data);
-            setPage(page + 1);
+            setPage((p) => p + 1);
           })
           .catch((err) => {
             console.log(err);
@@ -35,7 +33,7 @@ const Sidebar: React.FC<IProps> = ({ blog }) => {
     getAPI(`simmilarblogs?blog=${blog._id}&page=${page}`)
       .then((res) => {
         setBlogs(blogs?.concat(res.data));
-        setPage(page + 1);
+        setPage((p) => p + 1);
       })
       .catch((err) => {
         console.log(err);
@@ -48,8 +46,7 @@ const Sidebar: React.FC<IProps> = ({ blog }) => {
           isdarkMode ? "white" : "black"
         } mt-2 mb-1`}
       >
-        <h5 className="fw-bold">
-          Simmilar Articles        </h5>
+        <h5 className="fw-bold">Simmilar Articles </h5>
       </div>
       <InfiniteScroll
         dataLength={page * 8} //This is important field to render the next data
