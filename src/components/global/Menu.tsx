@@ -1,11 +1,11 @@
-import { Link, useHistory, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { RootStore } from "../../utils/TypeScript";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import { logout } from "../../redux/actions/authAction";
-import { notificationRead } from "../../redux/actions/notificationAction";
 import { handledarkMode } from "../../redux/actions/DarkModeAction";
-import "../../styles/notification.css"
+import { notificationRead } from "../../redux/actions/notificationAction";
+import "../../styles/notification.css";
+import { RootStore } from "../../utils/TypeScript";
 
 const Menu = () => {
   const { auth, notification, darkMode } = useSelector(
@@ -127,12 +127,15 @@ const Menu = () => {
         </li>
 
         {auth.user && (
-          <li className="notification dropdown text-cenetr" style={{ cursor: "pointer" }}>
+          <li
+            className="notification dropdown text-cenetr"
+            style={{ cursor: "pointer" }}
+          >
             <span
               className="nav-link"
               data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasWithBothOptions"
-                  aria-controls="offcanvasWithBothOptions"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
               onClick={Read}
             >
               <i className="fas fa-bell fa-lg position-relative">
@@ -147,7 +150,7 @@ const Menu = () => {
         )}
         <li>
           <div className="d-md-none">
-            <>
+            <ul>
               {auth.user ? (
                 <li
                   className="nav-item dropdown text-cenetr"
@@ -213,7 +216,9 @@ const Menu = () => {
                   </h5>
                   <button
                     type="button"
-                    className={`btn-close btn-close-${isdarkMode?'white':'black'} text-reset`}
+                    className={`btn-close btn-close-${
+                      isdarkMode ? "white" : "black"
+                    } text-reset`}
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                     id="canvasclose"
@@ -311,7 +316,7 @@ const Menu = () => {
                   </ul>
                 </div>
               </div>
-            </>
+            </ul>
           </div>
         </li>
       </ul>

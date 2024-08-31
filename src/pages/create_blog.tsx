@@ -1,29 +1,29 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { RootStore, IBlog } from "../utils/TypeScript";
-import { validCreateBlog, shallowEqual } from "../utils/Valid";
-import { getAPI, postAPI, patchAPI } from "../utils/FetchData";
-import NotFound from "../components/global/NotFound";
+import React, { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import ReactQuill from "../components/editor/ReactQuill";
+import NotFound from "../components/global/NotFound";
+import { getAPI, patchAPI, postAPI } from "../utils/FetchData";
+import { IBlog, RootStore } from "../utils/TypeScript";
+import { shallowEqual, validCreateBlog } from "../utils/Valid";
 
 import { ALERT } from "../redux/types/alertType";
 
+import { useHistory } from "react-router-dom";
+import BlogPreview from "../components/cards/BlogPreview";
+import CreateBlogabove from "../components/cards/CreateBlogabove";
+import Helmetglobal from "../components/global/Helmetglobal";
 import {
   createBlog,
   createDraftdeleteBlog,
   updateBlog,
 } from "../redux/actions/blogAction";
 import {
+  autoDraft,
   createDraft,
   deleteDraftcreateBlog,
   getDraftsByUserId,
   updateDraft,
-  autoDraft,
 } from "../redux/actions/draftAction";
-import { useHistory } from "react-router-dom";
-import CreateBlogabove from "../components/cards/CreateBlogabove";
-import BlogPreview from "../components/cards/BlogPreview";
-import Helmetglobal from "../components/global/Helmetglobal";
 import { imageUpload } from "../utils/ImageUpload";
 
 interface IProps {
@@ -82,7 +82,6 @@ const CreateBlog: React.FC<IProps> = ({ id, draft }) => {
           })
           .catch((err) => console.log(err));
       }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [auth]);
 
   useEffect(() => {

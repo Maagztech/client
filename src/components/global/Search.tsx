@@ -1,16 +1,15 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import { useSelector } from "react-redux";
 import { getAPI } from "../../utils/FetchData";
 import { IBlog, ICategory, IUser, RootStore } from "../../utils/TypeScript";
 import CardHoriz from "../cards/CardHoriz";
-import { useSelector } from "react-redux";
 
 import SearchCard from "../cards/searchCard";
 import Follow from "../profile/Follow";
 import Onlytick from "../profile/Onlytick";
 import Loading from "./Loading";
-import authReducer from "../../redux/reducers/authReducer";
 // import { IParams, RootStore } from "../../utils/TypeScript";
 
 const Search = () => {
@@ -230,7 +229,7 @@ const Search = () => {
                       }`}
                     >
                       {users.slice(0, 2).map((user, index) => (
-                        <div className="pr-1">
+                        <div className="pr-1" key={index}>
                           <div className="d-flex flex-row justify-content-between align-items-center ">
                             <Link
                               to={`/profile/${user._id}`}
